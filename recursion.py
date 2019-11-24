@@ -12,3 +12,13 @@ def gcd(a,b):
         return a
     
     return gcd(b, a % b)
+ 
+def compareTo(s1, s2):
+  if(s1 == s2):
+    return 0
+  elif(s1 > s2):
+    return 1
+  elif(s1 < s2):
+    return -1
+  else:
+    return compareTo(s1[1:], s2[1:])
