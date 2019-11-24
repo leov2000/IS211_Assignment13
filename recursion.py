@@ -8,6 +8,16 @@ def fibonacci(num):
     return fibonacci(num - 1) + fibonacci(num - 2)
 
 def gcd(a, b):
+  """
+  A recursive function that computes the greatest common divisor.
+
+  Parameters:
+    a(int)
+    b(int)
+  
+  Returns:
+    an int
+  """
     if not b :
         return a
     
